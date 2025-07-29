@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boxes with Circles</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 50px;
+      background-color: #7452c3;
+    }
+
+    .square-box {
+      width: 200px;
+      height: 200px;
+      border: 5px solid #eee7e7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #1e0303;
+      padding: 100px;
+    }
+
+    .circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 80%;
+      overflow: hidden;
+      border: 5px solid #ebe406;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="square-box">
+    <div class="circle">
+      <img src="Papali.jpg" alt="Image 1">
+    </div>
+  </div>
+
+  <div class="square-box">
+    <div class="circle">
+      <img src="Papali.jpg" alt="Image 2">
+    </div>
+  </div>
+
+</body>
+</html>

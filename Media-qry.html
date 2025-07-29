@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .responsive-box {
+      width: 100%;
+      height: 150px;
+      text-align: center;
+      line-height: 150px;
+      color: white;
+      font-size: 20px;
+    }
+
+    /* Desktop */
+    .responsive-box {
+      background-color: green;
+    }
+
+    /* Tablet */
+    @media (max-width: 768px) {
+      .responsive-box {
+        background-color: orange;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 480px) {
+      .responsive-box {
+        background-color: rgb(229, 99, 121);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="responsive-box">Resize me!</div>
+
+</body>
+</html>

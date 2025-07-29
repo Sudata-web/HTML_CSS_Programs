@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Gradient Card</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      width: 300px;
+      padding: 20px;
+      border-radius: 20px;
+      color: white;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+      background-image:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.2), transparent 70%),
+        linear-gradient(135deg, #ff6a00, #ee0979);
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      margin-bottom: 15px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .card h2 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="Sudata.jpg" alt="Profile">
+    <h2>Sudata Pritisarmila Khuntia</h2>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+
+    .named {
+      color: blue;
+    }
+
+    .rgb {
+      color: rgb(255, 0, 0);
+    }
+
+    .hex {
+      color: #008080;
+    }
+
+    .rgba {
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hsl {
+      color: hsl(120, 100%, 25%);
+    }
+
+    .btn {
+      color: #ff6600;
+      border: 2px solid currentColor;
+      padding: 10px 20px;
+      background-color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="named">This text uses a named color (blue).</p>
+  <p class="rgb">This text uses RGB color (red).</p>
+  <p class="hex">This text uses HEX color (teal).</p>
+  <p class="rgba">This text uses RGBA with transparency.</p>
+  <p class="hsl">This text uses HSL color (dark green).</p>
+
+  <button class="btn">Button using currentColor</button>
+
+</body>
+</html>
